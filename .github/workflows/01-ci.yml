@@ -163,4 +163,4 @@ jobs:
       - name: Push Docker image with commit SHA
         run: |
           docker push \
-            ${{ vars.ACR_LOGIN_SERVER }}/${{ matrix.image }}:${{ github.sha }}
+            ${{ vars.ACR_LOGIN_SERVER }}/${{ matrix.image }}:${{ github.sha }} 
